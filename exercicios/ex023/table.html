@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brincanco com tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        tr.linha {
+            background-color: lightgray;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        td > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        td.anulado {
+            background-color: rgba(255, 0, 0, 0.726);
+        }
+    </style>
+</head>
+<body>
+    <h1>canditatos</h1>
+    <table>
+        <tr class="linha">
+            <td>João Silva</td>
+            <td>Ana Costa</td>
+            <td>Pedro Almeida</td>
+        </tr>
+        <tr>
+            <td>Maria Oliveira</td>
+            <td>Lucas Souza</td>
+            <td>Carolina Pereira</td>
+        </tr>
+        <tr class="linha">
+            <td>Rafael Santos</td>
+            <td class="anulado">Beatriz Rocha</td>
+            <td>Felipe Gomes</td>
+        </tr>
+        <tr>
+            <td><a href="http://tensura.fandom.com/pt-br/wiki/Satoru_Mikami#Mang%C3%A1" target="_blank" >Rimuru Tempest</a></td>
+            <td>Tiago Lima</td>
+            <td>Camila Fernandes</td>
+        </tr>
+        <tr class="linha">
+            <td>João Silva</td>
+            <td>Ana Costa</td>
+            <td>Pedro Almeida</td>
+        </tr>
+        <tr>
+            <td>Maria Oliveira</td>
+            <td>Lucas Souza</td>
+            <td>Carolina Pereira</td>
+        </tr>
+        <tr class="linha">
+            <td>Rafael Santos</td>
+            <td>Beatriz Rocha</td>
+            <td>Felipe Gomes</td>
+        </tr>
+        <tr>
+            <td>Laura Martins</td>
+            <td>Tiago Lima</td>
+            <td>Camila Fernandes</td>
+        </tr>
+    </table>
+</body>
+</html>
