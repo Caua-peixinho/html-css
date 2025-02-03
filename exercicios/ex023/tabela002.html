@@ -25,6 +25,17 @@
         td.num {
             text-align: right;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +43,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -40,15 +52,16 @@
                 TR, TD, TH
     -->
     <table>
+        
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
 
             </tr>
@@ -163,6 +176,7 @@
                 <td class="num">636 707</td>
             </tr>
         </tbody>
+        <caption>população das unidades federativas</caption>
     </table>
 </body>
 </html>
